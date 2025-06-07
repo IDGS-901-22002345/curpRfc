@@ -1,9 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common'; 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterModule],
+  standalone: true,
+  imports: [
+    RouterModule,
+    ReactiveFormsModule, 
+    CommonModule
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
